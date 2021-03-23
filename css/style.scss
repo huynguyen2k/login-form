@@ -1,0 +1,100 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #0B0C0D;
+}
+
+.form {
+    width: 350px;
+    padding: 0 30px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .login-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-form {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 10;
+    }
+
+    .user-icon,
+    .user-plus {
+        width: 100%;
+        text-align: center;    
+        font-size: 3rem;
+        color: lightgray;
+        margin-bottom: 30px;
+    }
+
+    .user-input {
+        padding: 14px 15px;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        background-color: #222528;
+        color: white;
+        font-size: 18px;
+    }
+
+    .user-input:focus {
+        border: 0 solid dodgerblue;
+        border-width: 0 7px 0 7px;
+        box-shadow: 0 0 30px 1px rgba(30, 144, 255, 0.7);
+    }
+
+    .option-01 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        color: lightgray;
+
+        .forget {
+            color: dodgerblue;
+            font-style: italic;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 10px 15px;
+        font-size: 18px;
+        color: white;
+        background-color: dodgerblue;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .option-02 {
+        text-align: center;
+        color: lightgray;
+
+        .register-link,
+        .sign-in {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login And Register</title>
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/15e239e756.js" crossorigin="anonymous"></script>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <!-- start container -->
+    <div class="container">
+        <!-- start form -->
+        <div class="form">
+            <!-- start form login -->
+            <form action="" method="POST" class="login-form">
+                <i class="fas fa-user-circle user-icon"></i>
+                <input type="text" placeholder="Username" name="" class="user-input" required>
+                <input type="password" placeholder="Password" name="" class="user-input" required>
+                <div class="option-01">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forget">Forgot your password?</a>
+                </div>
+                <input type="submit" value="LOGIN" class="login-btn">
+                <div class="option-02">
+                    <span>Not registered?</span>
+                    <a href="#" class="register-link">Create an account</a>
+                </div>
+            </form>
+            <!-- end form login -->
+
+            <!-- start form create an account -->
+            <form action="" method="POST" class="register-form">
+                <i class="fas fa-user-plus user-plus"></i>
+                <input class="user-input" type="text" placeholder="Username" name="" required>
+                <input class="user-input" type="email" placeholder="Email Address" name="" required>
+                <input class="user-input" type="password" placeholder="Password" name="" required>
+                <input class="register-btn" type="Submit" value="Register" name="">
+                <div class="option-02">
+                    <span>Already registered?</span>
+                    <a class="sign-in" href="#">Sign in</a>
+                </div>
+            </form>
+            <!-- end form create and account -->
+        </div>
+        <!-- end form -->
+    </div>
+    <!-- end container -->
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
